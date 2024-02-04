@@ -1,0 +1,442 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 35px;
+    cursor: pointer;
+    font-family: verdana;
+}
+h2{
+    font-size: 40px;
+    font-family: arial;
+    font-weight: 900;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    font-family: arial;
+}
+p{
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.h2-header{
+    font-family: arial;
+    margin-bottom:20px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+.h2-register-header{
+    margin-top: 40px;
+    font-family: Calibri;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 25px;
+    font-size: 16px;
+    border: none;
+  }
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.second-nav-bar{
+    background-color:#04AA6D;
+    display: flex;
+    flex-direction: row
+}
+
+
+/*Navigation bar*/
+.navigation-bar{
+    background-color: rgb(219, 171, 109);
+    padding: 20px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-logout{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 43em;
+    opacity: 0.5;
+}
+.logout-btn{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: arial;
+    margin: 15px;
+    cursor: pointer;
+}
+.edit-btn{
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: arial;
+    text-align: center;
+    margin-left: 10em;
+    cursor: pointer;
+    background-color: rgb(77, 255, 67);
+    width: 25%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+.edit-btn:hover{
+    background-color: rgb(253, 122, 122);
+    transition: 0.5s;
+}
+.update-btn{
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: arial;
+    text-align: center;
+    margin: 30px;
+    margin-left: 12em;
+    cursor: pointer;
+    background-color: rgb(77, 255, 67);
+    width: 25%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+.update-btn:hover{
+    background-color: rgb(253, 122, 122);
+    transition: 0.5s;
+}
+
+.editbooks-btn{
+     font-size: 20px;
+     font-family: arial;
+     outline: none;
+     margin: 5px;
+}
+.adminlogin{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: arial;
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.admin-submit-btn{
+    border:solid 3px rgb(48, 228, 48);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: arial;
+    text-align: center;
+    margin: 25px;
+    margin-left: 5em;
+    cursor: pointer;
+    background-color:transparent;
+    color: rgb(68, 248, 68);
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+}
+
+
+/*Card Section*/
+.card{
+    display: inline-block;
+    width: 21rem;
+    padding: 30px;
+    background-color: rgba(206, 207, 164, 0.417);
+    margin: 70px 20px 0px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(120, 118, 118);
+}
+.card-title{
+    color: rgb(177, 52, 52);
+    font-size: 25px;
+    font-family: arial;
+    text-align: center;
+}
+.card-text{
+    font-size: 20px;
+    font-family: arial;
+    padding: 40px 0px;
+}
+.btn-primary{
+    background-color:rgb(7, 8, 7);
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: arial;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/*Table Section*/
+table,th,td{
+    width: 70rem;
+    text-align: center;
+    font-size: 20px;
+    font-family: calibri;
+    margin: 40px auto;
+    box-shadow: 5px 5px 5px rgb(139, 134, 134);
+    background-color: rgb(208, 221, 234);
+}
+th{
+    font-size: 25px;
+    color:white;
+    background-color: rgb(32, 187, 32);
+}
+
+
+/*Admin login form only for admin login page*/
+.adminloginform{
+  background-color: rgb(27, 47, 80);
+  width: fit-content;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  border: solid 2px rgb(78, 251, 78);
+  border-radius: 10px;
+  box-shadow:2px 2px 5px rgb(39, 142, 30);
+}
+.adminloginform>input{
+    color: rgb(237, 245, 239);
+    font-size: 25px;
+    background-color:transparent;
+    border:3px solid green;
+    margin: 45px;
+}
+.adminloginform>h3{
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    position: relative;
+    left: 2.5em;
+    top: 1.5em;
+}
+
+
+/*Body section for home page*/
+.welcome-user{ /*welcoming user name on user dashnoard page*/
+   display: inline-block;
+   font-size: 20px;
+   font-weight: 600;
+   font-family:Arial;
+   margin-top: 30px;
+   margin-left:40%;
+   margin-right:40%;
+   color: white;
+   background-color: rgb(54, 48, 48);
+   padding: 15px;
+   border-radius: 30px;
+}
+.body-section{
+    background-image:url("https://wallpapers.com/images/featured/4k-galaxy-a3qjl9atd2ku58vt.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+
+}
+.body-container{
+    z-index: 2;
+    background-color:rgb(54, 52, 52);
+    box-shadow: 3px 3px 5px rgb(95, 92, 92);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+.login-section {
+   background-color: rgb(173, 176, 230);
+   width: 50%;
+}
+.login-container{
+    margin-top: 25px;
+    margin-left: 8.5em;
+    display: grid;
+    justify-content: center;
+}
+.login-head{
+    margin: 20px;
+    text-align: center;
+}
+input{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    margin:10px;
+    font-size: 15px;
+    font-family: arial;
+    font-weight: 700;
+    padding-left: 10px;
+}
+input[type=submit]{
+    
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgb(253, 33, 33);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: arial;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input:hover[type="submit"]{
+    background-color: rgb(57, 190, 57);
+    transition: 0.3s;
+}
+#register-word{
+    color: rgb(177, 48, 48);
+    cursor: pointer;
+}
+.img-section img{
+    height: 100%;
+    width:105%; 
+}
+.mssg{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: red;
+}
+.mssg-2{
+    font-size: 25px;
+    font-family:arial;
+    font-weight: 700;
+    position: absolute;
+    bottom: 25%;
+    margin-left: 43%;
+    color: rgb(245, 220, 33);
+}
+
+/*Register page*/
+.register-body{
+    background-image:url("https://wallpapers.com/images/featured/4k-galaxy-a3qjl9atd2ku58vt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+}
+.register-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(54, 52, 52);
+    box-shadow: 3px 3px 5px rgb(95, 92, 92);
+    border-radius: 10px;
+    padding: 20px;
+    height: 80vh;
+}
+.img-register img{
+    width: 100%;
+    height: 100%;
+}
+.registration{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(173, 176, 230);
+    padding: 20px;
+}
+
+.profiledetails>h3{
+    position: relative;
+    top: 3em;
+    color: black;
+    font-size: 20px;
+}
+.profiledetails>input{
+    background-color: rgb(183, 219, 248);
+    color: black;
+    width: 70%;
+    height: 80%;
+    margin-left: 7em;
+    padding: 15px;
+    font-size: 20px;
+}
+.editbooksdetails>h3{
+    position: relative;
+    top: 3em;
+    color: black;
+    font-size: 20px;
+}
+.editbooksdetails>input{
+    background-color: rgb(157, 205, 244);
+    color: black;
+    width: 70%;
+    height: 80%;
+    margin-left: 8em;
+    padding: 15px;
+    font-size: 20px;
+}
+.addbooksdetails>h3{
+    position: relative;
+    top: 2em;
+    color: black;
+    font-size: 20px;
+}
+.addbooksdetails>input{
+    text-align: left;
+    background-color: rgb(157, 205, 244);
+    color: black;
+    width: 70%;
+    height: 80%;
+    margin-left: 8em;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 0px;
+}
+
